@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ravi Tej P — Computer Science Engineering student specializing in AI & Machine Learning at REVA University. Explore my projects, skills and achievements.">
+    <meta name="keywords" content="Ravi Tej P, portfolio, CSE, AI, Machine Learning, REVA University, web developer">
+    <meta name="author" content="Ravi Tej P">
+    <title>Ravi Tej P | CSE · AI & ML Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===================== LOADER ===================== -->
+<div id="loader" class="loader">
+    <div class="loader-inner">
+        <div class="loader-logo">RT<span>.</span></div>
+        <div class="loader-name">RAVI TEJ P.</div>
+        <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+        <div class="loader-pct">0%</div>
+    </div>
+</div>
+
+<!-- ===================== CUSTOM CURSOR ===================== -->
+<div id="cursor-dot" class="cursor-dot"></div>
+<div id="cursor-ring" class="cursor-ring"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+    <a href="#home" class="nav-logo" id="nav-logo-link">RT<span>.</span></a>
+    <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#education" class="nav-link" data-section="education">Education</a>
+        <a href="#achievements" class="nav-link" data-section="achievements">Certs</a>
+        <a href="#contact" class="nav-cta nav-link" data-section="contact">Let's Talk ↗</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-particles" id="hero-particles"></div>
+
+    <div class="hero-content">
+        <p class="eyebrow">
+            <span class="status-dot"></span>
+            <span class="eyebrow-text">COMPUTER SCIENCE ENGINEERING · AI & ML</span>
+        </p>
+        <h1 class="hero-title">
+            <span class="hero-line"><span class="word">Hello,</span> <span class="word">I'm</span></span>
+            <span class="hero-line hero-name"><span class="word">Ravi</span> <span class="word">Tej</span> <span class="word accent-word">P.</span></span>
+        </h1>
+        <h2 class="hero-sub">
+            Building ideas into
+            <span class="typewriter-wrap"><span id="typewriter"></span><span class="type-cursor">|</span></span>
+        </h2>
+        <p class="hero-desc">
+            A passionate B.Tech CSE (AI &amp; ML) student at REVA University,
+            exploring programming, web development and artificial intelligence.
+            Always curious, always learning, always building.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary magnetic" id="btn-explore">Explore My Work ↗</a>
+            <a href="#contact" class="btn btn-secondary magnetic" id="btn-connect">Let's Connect</a>
+        </div>
+        <div class="hero-socials">
+            <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ravi-tej-p-6163a0444/" target="_blank" rel="noopener" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+            </a>
+            <a href="mailto:rtej3957@gmail.com" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                Email
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-visual" id="hero-visual">
+        <div class="hero-3d-scene" id="hero-3d-scene">
+            <div class="glass-card" id="glass-card">
+                <div class="gc-top">
+                    <span class="gc-label">MY PROFILE</span>
+                    <span class="gc-symbol">✳</span>
+                </div>
+                <div class="gc-avatar">RT</div>
+                <div class="gc-name">Ravi Tej P.</div>
+                <div class="gc-role">CSE · AI &amp; Machine Learning</div>
+                <div class="gc-divider"></div>
+                <div class="gc-details">
+                    <div class="gc-detail"><span>UNIVERSITY</span><strong>REVA University</strong></div>
+                    <div class="gc-detail"><span>FOCUS</span><strong>Learning &amp; Building</strong></div>
+                    <div class="gc-detail"><span>INTEREST</span><strong>Tech &amp; Innovation</strong></div>
+                </div>
+                <div class="gc-orbs">
+                    <div class="gc-orb orb-1"></div>
+                    <div class="gc-orb orb-2"></div>
+                    <div class="gc-orb orb-3"></div>
+                </div>
+            </div>
+            <div class="float-ring ring-1"></div>
+            <div class="float-ring ring-2"></div>
+            <div class="float-ring ring-3"></div>
+            <div class="tech-badge tb-html">HTML</div>
+            <div class="tech-badge tb-css">CSS</div>
+            <div class="tech-badge tb-js">JS</div>
+            <div class="tech-badge tb-py">PY</div>
+            <div class="tech-badge tb-c">C</div>
+            <div class="tech-badge tb-ai">AI</div>
+            <div class="ambient-light al-1"></div>
+            <div class="ambient-light al-2"></div>
+        </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>SCROLL</span>
+    </div>
+    <div class="hero-number">01 / PORTFOLIO</div>
+</section>
+
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section about-section" id="about">
+    <div class="section-bg-deco ab-deco-1"></div>
+    <div class="section-bg-deco ab-deco-2"></div>
+
+    <div class="section-label reveal-label">01 — ABOUT ME</div>
+    <div class="about-grid">
+        <div class="about-left">
+            <h2 class="section-title reveal-title">
+                Curious<br>
+                <span class="accent">Creative</span><br>
+                Innovator.
+            </h2>
+            <div class="about-geo-visual">
+                <div class="geo-ring geo-r1"></div>
+                <div class="geo-ring geo-r2"></div>
+                <div class="geo-ring geo-r3"></div>
+                <div class="geo-center">
+                    <span>RT</span>
+                </div>
+                <div class="geo-orbit go-1"></div>
+                <div class="geo-orbit go-2"></div>
+                <div class="geo-orbit go-3"></div>
+            </div>
+        </div>
+        <div class="about-right reveal-stagger">
+            <p class="about-lead">
+                Hello! I'm <strong>Ravi Tej P</strong>, a Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning at REVA University.
+            </p>
+            <p>
+                I enjoy learning new technologies, developing useful applications, solving problems and transforming creative ideas into practical solutions.
+            </p>
+            <p>
+                I'm always ready to learn something new, take on challenges and give my 100% to everything I do. My journey is about building skills, gaining experience and discovering new opportunities in technology.
+            </p>
+            <div class="objective-box">
+                <div class="obj-icon">✳</div>
+                <div>
+                    <h3>Career Objective</h3>
+                    <p>
+                        To enhance my programming skills, gain practical industry experience and contribute to innovative technology projects while continuously learning and growing as a developer.
+                    </p>
+                </div>
+            </div>
+            <div class="profile-info-panel">
+                <div class="pip-item"><span>DEGREE</span><strong>B.Tech CSE (AI &amp; ML)</strong></div>
+                <div class="pip-item"><span>UNIVERSITY</span><strong>REVA University</strong></div>
+                <div class="pip-item"><span>STATUS</span><strong>Currently Pursuing</strong></div>
+                <div class="pip-item"><span>LOCATION</span><strong>Bangalore, India</strong></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section skills-section" id="skills">
+    <div class="section-label reveal-label">02 — WHAT I KNOW</div>
+    <div class="section-heading">
+        <h2 class="section-title reveal-title">Skills &amp; <span class="accent">Expertise.</span></h2>
+        <p class="section-sub">Technologies and concepts I'm exploring and developing my knowledge in.</p>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-card tilt-card" id="sk1">
+            <div class="sk-glow"></div>
+            <div class="sk-number">01</div>
+            <div class="sk-icon-wrap">
+                <svg class="sk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13,2 13,9 20,9"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Creating structured and visually engaging websites and interfaces.</p>
+            <div class="sk-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="skill-card tilt-card" id="sk2">
+            <div class="sk-glow"></div>
+            <div class="sk-number">02</div>
+            <div class="sk-icon-wrap">
+                <svg class="sk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming</h3>
+            <p>Developing programming logic and solving computational problems.</p>
+            <div class="sk-tags"><span>C</span><span>Python</span></div>
+        </div>
+        <div class="skill-card tilt-card" id="sk3">
+            <div class="sk-glow"></div>
+            <div class="sk-number">03</div>
+            <div class="sk-icon-wrap">
+                <svg class="sk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>Understanding and working with data using Python libraries.</p>
+            <div class="sk-tags"><span>Data Analysis</span><span>Visualization</span></div>
+        </div>
+        <div class="skill-card tilt-card" id="sk4">
+            <div class="sk-glow"></div>
+            <div class="sk-number">04</div>
+            <div class="sk-icon-wrap">
+                <svg class="sk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+            </div>
+            <h3>Dev Tools</h3>
+            <p>Managing code and exploring development workflows effectively.</p>
+            <div class="sk-tags"><span>Git</span><span>GitHub</span><span>File Handling</span></div>
+        </div>
+        <div class="skill-card tilt-card" id="sk5">
+            <div class="sk-glow"></div>
+            <div class="sk-number">05</div>
+            <div class="sk-icon-wrap">
+                <svg class="sk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>AI &amp; Prompt Engineering</h3>
+            <p>Exploring AI concepts and crafting effective prompts.</p>
+            <div class="sk-tags"><span>AI Fundamentals</span><span>Prompt Engineering</span></div>
+        </div>
+        <div class="skill-card tilt-card" id="sk6">
+            <div class="sk-glow"></div>
+            <div class="sk-number">06</div>
+            <div class="sk-icon-wrap">
+                <svg class="sk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Core Concepts</h3>
+            <p>Exploring interdisciplinary engineering and logic fundamentals.</p>
+            <div class="sk-tags"><span>Digital Logic</span><span>Civil</span><span>Mechanical</span></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section projects-section" id="projects">
+    <div class="section-label reveal-label">03 — THINGS I'VE BUILT</div>
+    <div class="section-heading">
+        <h2 class="section-title reveal-title">Turning Ideas<br><span class="accent">Into Reality.</span></h2>
+        <p class="section-sub">A collection of projects that reflect my learning, creativity and technical journey.</p>
+    </div>
+    <div class="projects-grid">
+
+        <article class="project-card proj-featured tilt-card" id="proj1">
+            <div class="proj-visual pv-cricket">
+                <div class="pv-icon">🏏</div>
+                <div class="pv-label">TEAM SELECTION</div>
+                <div class="pv-num">11</div>
+                <div class="proj-shine"></div>
+            </div>
+            <div class="proj-body">
+                <div class="proj-meta">
+                    <span class="proj-number">01</span>
+                    <span class="proj-cat">AI &amp; WEB DEVELOPMENT</span>
+                </div>
+                <h3>AI Cricket Playing XI Selector</h3>
+                <p>An AI-based cricket team selection website designed to explore player selection and team-building concepts through web development.</p>
+                <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI Concepts</span></div>
+                <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+            </div>
+            <div class="proj-glow"></div>
+        </article>
+
+        <article class="project-card tilt-card" id="proj2">
+            <div class="proj-visual pv-editor">
+                <div class="pv-icon">▦</div>
+                <div class="pv-shapes"><span></span><span></span><span></span></div>
+                <div class="proj-shine"></div>
+            </div>
+            <div class="proj-body">
+                <div class="proj-meta">
+                    <span class="proj-number">02</span>
+                    <span class="proj-cat">C PROGRAMMING</span>
+                </div>
+                <h3>ACP 2D Editor</h3>
+                <p>A two-dimensional editor developed using C programming, exploring graphical concepts, object manipulation and programming logic.</p>
+                <div class="proj-tags"><span>C</span><span>2D Graphics</span><span>Logic Building</span></div>
+                <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+            </div>
+            <div class="proj-glow"></div>
+        </article>
+
+        <article class="project-card tilt-card" id="proj3">
+            <div class="proj-visual pv-books">
+                <div class="pv-icon">📚</div>
+                <div class="pv-label">BOOK STORE</div>
+                <div class="proj-shine"></div>
+            </div>
+            <div class="proj-body">
+                <div class="proj-meta">
+                    <span class="proj-number">03</span>
+                    <span class="proj-cat">WEB APPLICATION</span>
+                </div>
+                <h3>General Books Store Portal</h3>
+                <p>An online platform designed to allow users to browse books and explore the process of ordering books online.</p>
+                <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+            </div>
+            <div class="proj-glow"></div>
+        </article>
+
+        <article class="project-card tilt-card" id="proj4">
+            <div class="proj-visual pv-portfolio">
+                <div class="pv-icon">✧</div>
+                <div class="pv-label">MY PORTFOLIO.</div>
+                <div class="proj-shine"></div>
+            </div>
+            <div class="proj-body">
+                <div class="proj-meta">
+                    <span class="proj-number">04</span>
+                    <span class="proj-cat">PERSONAL WEBSITE</span>
+                </div>
+                <h3>E-Portfolio Website</h3>
+                <p>A personal website created to present my technical skills, projects, achievements and professional journey.</p>
+                <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+            </div>
+            <div class="proj-glow"></div>
+        </article>
+
+        <article class="project-card tilt-card" id="proj5">
+            <div class="proj-visual pv-student">
+                <div class="pv-icon">♙</div>
+                <div class="pv-lines"><span></span><span></span><span></span></div>
+                <div class="proj-shine"></div>
+            </div>
+            <div class="proj-body">
+                <div class="proj-meta">
+                    <span class="proj-number">05</span>
+                    <span class="proj-cat">APPLICATION DEVELOPMENT</span>
+                </div>
+                <h3>Student Information Management System</h3>
+                <p>A basic application developed to organize and manage student records, focusing on data management and file handling.</p>
+                <div class="proj-tags"><span>C</span><span>File Handling</span><span>Data Management</span></div>
+                <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+            </div>
+            <div class="proj-glow"></div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- ===================== EDUCATION ===================== -->
+<section class="section education-section" id="education">
+    <div class="section-bg-deco ed-deco"></div>
+    <div class="section-label reveal-label">04 — MY JOURNEY</div>
+    <div class="section-heading">
+        <h2 class="section-title reveal-title">Education &amp; <span class="accent">Growth.</span></h2>
+        <p class="section-sub">Every step is an opportunity to learn something new.</p>
+    </div>
+    <div class="timeline">
+        <div class="timeline-line"><div class="timeline-progress" id="timeline-progress"></div></div>
+
+        <div class="timeline-item reveal-stagger">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+                <div class="tl-label">FOUNDATION</div>
+                <h3>10th Standard</h3>
+                <p>State Board</p>
+                <span class="tl-status completed">✓ Completed</span>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal-stagger">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+                <div class="tl-label">PRE-UNIVERSITY</div>
+                <h3>12th / PUC</h3>
+                <p>Karnataka State Board</p>
+                <span class="tl-status completed">✓ Completed</span>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal-stagger active-tl">
+            <div class="tl-dot tl-dot-active"></div>
+            <div class="tl-content">
+                <div class="tl-label">UNDERGRADUATE</div>
+                <h3>B.Tech – CSE (AI &amp; ML)</h3>
+                <p>REVA University, Bangalore</p>
+                <span class="tl-status current">◉ Currently Pursuing</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section class="section achievement-section" id="achievements">
+    <div class="section-label reveal-label">05 — RECOGNITION</div>
+    <div class="section-heading">
+        <h2 class="section-title reveal-title">Certifications &amp; <span class="accent">Achievements.</span></h2>
+        <p class="section-sub">Learning beyond classrooms and building knowledge through certifications.</p>
+    </div>
+    <div class="cert-grid">
+        <div class="cert-card tilt-card" id="cert1">
+            <div class="cert-icon">✳</div>
+            <div class="cert-body">
+                <span class="cert-num">01</span>
+                <h3>Data Analysis with Python</h3>
+                <p>Python-based data analysis fundamentals and techniques.</p>
+            </div>
+            <div class="cert-arrow">↗</div>
+            <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card tilt-card" id="cert2">
+            <div class="cert-icon">◈</div>
+            <div class="cert-body">
+                <span class="cert-num">02</span>
+                <h3>Data Visualization with Python</h3>
+                <p>Exploring data visualization techniques and chart libraries.</p>
+            </div>
+            <div class="cert-arrow">↗</div>
+            <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card tilt-card" id="cert3">
+            <div class="cert-icon">⌘</div>
+            <div class="cert-body">
+                <span class="cert-num">03</span>
+                <h3>Python 101 for Data Science</h3>
+                <p>Python programming fundamentals for data science workflows.</p>
+            </div>
+            <div class="cert-arrow">↗</div>
+            <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card tilt-card" id="cert4">
+            <div class="cert-icon">✦</div>
+            <div class="cert-body">
+                <span class="cert-num">04</span>
+                <h3>Wadhwani IBM Certificate</h3>
+                <p>Professional learning and skill development program.</p>
+            </div>
+            <div class="cert-arrow">↗</div>
+            <div class="cert-glow"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== INTERESTS ===================== -->
+<section class="section interests-section">
+    <div class="section-label reveal-label">06 — WHAT DRIVES ME</div>
+    <h2 class="section-title reveal-title interests-title">
+        Exploring. Learning.<br>
+        <span class="accent">Creating the future.</span>
+    </h2>
+    <div class="interest-tags">
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+        <span>Web Development</span>
+        <span>Python Programming</span>
+        <span>Data Analysis</span>
+        <span>Software Development</span>
+        <span>Problem Solving</span>
+        <span>Prompt Engineering</span>
+        <span>Data Structures &amp; Algorithms</span>
+    </div>
+    <div class="learning-note">
+        <span class="status-dot"></span>
+        <p>Currently learning: Advanced Python · Frontend Development · Data Structures &amp; Algorithms · AI/ML Fundamentals.</p>
+    </div>
+</section>
+
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact-section" id="contact">
+    <div class="contact-bg-deco cbd-1"></div>
+    <div class="contact-bg-deco cbd-2"></div>
+
+    <div class="section-label reveal-label">07 — GET IN TOUCH</div>
+    <h2 class="contact-heading reveal-title">
+        Let's Build Something<br>
+        <span class="accent">Amazing Together.</span>
+    </h2>
+    <p class="contact-sub">
+        I'm always open to learning opportunities, collaborations, interesting projects and connecting with fellow technology enthusiasts.
+    </p>
+    <a href="mailto:rtej3957@gmail.com" class="btn btn-contact magnetic" id="btn-contact">
+        <span>Let's Talk</span> ↗
+    </a>
+
+    <div class="contact-cards">
+        <a href="mailto:rtej3957@gmail.com" class="contact-card">
+            <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="cc-body">
+                <span>EMAIL</span>
+                <strong>rtej3957@gmail.com</strong>
+            </div>
+            <div class="cc-arrow">↗</div>
+        </a>
+        <a href="tel:+918088313205" class="contact-card">
+            <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.64 3.42 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="cc-body">
+                <span>PHONE</span>
+                <strong>+91 8088313205</strong>
+            </div>
+            <div class="cc-arrow">↗</div>
+        </a>
+        <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener" class="contact-card">
+            <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="cc-body">
+                <span>GITHUB</span>
+                <strong>rtej3957-oss</strong>
+            </div>
+            <div class="cc-arrow">↗</div>
+        </a>
+        <a href="https://www.linkedin.com/in/ravi-tej-p-6163a0444/" target="_blank" rel="noopener" class="contact-card">
+            <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="cc-body">
+                <span>LINKEDIN</span>
+                <strong>Connect with me</strong>
+            </div>
+            <div class="cc-arrow">↗</div>
+        </a>
+    </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="footer-inner">
+        <a href="#home" class="footer-logo">RT<span>.</span></a>
+        <div class="footer-center">
+            <p>Designed &amp; Built by <strong>Ravi Tej P.</strong></p>
+            <p class="footer-copy">© 2026 All Rights Reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/rtej3957-oss" target="_blank" rel="noopener">GH</a>
+            <a href="https://www.linkedin.com/in/ravi-tej-p-6163a0444/" target="_blank" rel="noopener">LI</a>
+            <a href="mailto:rtej3957@gmail.com">EM</a>
+        </div>
+    </div>
+    <a href="#home" class="back-top" id="back-top">
+        <span>↑</span> BACK TO TOP
+    </a>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<!-- Three.js for 3D Hero Canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<!-- Lenis Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<!-- Main Script -->
+<script src="main.js"></script>
+</body>
+</html>
