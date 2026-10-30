@@ -54,9 +54,9 @@ To enhance my programming skills, gain practical experience, and contribute to i
 - AI & Machine Learning Fundamentals
 
 ##  Connect With Me
-- **GitHub:** [Your GitHub Profile]()
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourusername)
-- **Email:** yourmail@example.com
+- **GitHub:** [Your GitHub Profile](https://github.com/rtej3957-oss)
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/ravi-tej-p-6163a0444/)
+- **Email:** rtej3957@gmail.com
 
 ---
-⭐ Thank you for visiting my portfolio!
+ Thank you for visiting my portfolio!
